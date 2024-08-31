@@ -1,0 +1,840 @@
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 1em;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #015dc0;
+    color: white;
+    padding: 1.25em;
+    text-align: center;
+    display: flex;
+   
+}
+header h2{
+    margin: auto;
+  font-size: 4.5vw;
+
+}
+nav {
+position: relative;
+display: flex;
+justify-content: space-around;
+align-items: center;
+z-index: 10000;
+background-color: #ffffff; 
+}
+
+nav .menu-icon {
+font-size: 4em;
+color: rgb(0, 0, 0);
+cursor: pointer;
+display: none; 
+}
+
+nav ul {
+position: static;
+list-style-type: none; 
+padding: 0; 
+margin: 0; 
+display: flex;
+}
+
+nav ul li {
+display: inline-flex; 
+background-color: #ffffff;
+padding: 0.75em 0.7em;
+transition: box-shadow 0.3s ease, transform 0.3s ease;
+margin: 0.1em;
+text-align: center;
+position: relative;
+}
+
+nav a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+font-size: 1.1em;
+position: relative; 
+}
+
+nav li:hover {
+box-shadow: 
+    0 -6px 8px rgb(47, 134, 248), 
+    0 0 0 rgba(0, 4, 240, 0.7),  
+    0 0 0 rgba(0, 4, 255, 0.7);  
+transform: translateY(-1vw);
+overflow: hidden;
+}
+
+
+.hero {
+display: block;
+position: relative; 
+background-image: url('https://cdn01.pucp.education/idehpucp/images/2024/03/imagen_2021-02-01_130648.png');
+background-size: cover; 
+background-position: center; 
+padding: 10em 1.25em;
+text-align: center;
+overflow: hidden; 
+background-attachment: fixed;
+
+
+}
+
+.hero::before {
+content: ''; 
+position: absolute; 
+top: 0; 
+left: 0; 
+right: 0; 
+bottom: 0; 
+background-color: rgba(0, 0, 0, 0.76); 
+z-index: 1; 
+}
+blockquote {
+
+font-style: italic;
+}
+
+
+
+.hero h2, .hero p ,.btn{
+margin-left:30%;
+font-size: 2em;
+color:#ffffff;
+position: relative; 
+z-index: 2; 
+width: 70%;
+text-align: right;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 0.625em 1.25em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+   position: relative;
+}
+
+main {
+    padding: 1.25em;
+}
+.Propuestas {
+position: relative;
+display: flex; 
+flex-wrap: wrap; 
+justify-content: space-around; 
+}
+#propuestas .btn {
+    background-color: #055cbe;
+    color: white;
+    padding: 0.325em 1.25em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+ margin: 0em 0 0 5em;
+
+   
+}
+
+.propuesta:hover::before {
+background-color: transparent; 
+}
+
+.propuesta:hover h3,
+.propuesta:hover p {
+display: none; 
+}
+
+.propuesta {
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.452);
+padding: 2vw;
+font-size: 1.35em;
+position: relative;
+background-size: cover; 
+background-position: center; 
+text-align: center;
+border-radius: 5px;
+height: 15vw;
+width: calc(30% - 1em); 
+margin: 0.9em; 
+box-sizing: border-box; 
+border-radius:1vw;
+
+}
+
+.propuesta:nth-child(1) {
+background-image: url('https://diarioelpueblo.com.pe/wp-content/uploads/2024/01/image-37.png'); 
+}
+
+.propuesta:nth-child(2) {
+background-image: url('https://files.pucp.education/puntoedu/wp-content/uploads/2021/02/26164309/sistema-salud-1-ANDINA-1200x800.jpg'); 
+}
+
+.propuesta:nth-child(3) {
+background-image: url('https://www.horizonteminero.com/wp-content/uploads/2021/07/peru.jpg'); 
+}
+.propuesta:nth-child(4) {
+background-image: url('https://elperuano.pe/fotografia/thumbnail/2022/06/23/000178721M.jpg'); 
+}
+.propuesta:nth-child(5) {
+background-image: url('https://www.ppdperu.org/wp-content/uploads/2020/03/andenes-3-683x1024.jpg'); 
+}
+.propuesta:nth-child(6) {
+background-image: url('https://ddclalibertad.gob.pe/wp-content/uploads/2021/04/Peru-lanzan-Pacto-por-la-Cultura-al-2030-scaled.jpg'); 
+}
+.propuesta:nth-child(7) {
+background-image: url('https://elperuano.pe/fotografia/thumbnail/2023/07/05/000255321M.jpg'); 
+}
+.propuesta:nth-child(8) {
+background-image: url('https://insurgenciamagisterial.com/wp-content/uploads/2023/09/El-Estado-republicano-en-el-Peru-y-los-derechos-humanos.jpg'); 
+}
+
+
+
+.propuesta::before {
+border-radius:1vw;
+content: ''; 
+position: absolute; 
+top: 0; 
+left: 0; 
+right: 0; 
+bottom: 0; 
+background-color: rgba(0, 0, 0, 0.493); 
+z-index: 1; 
+transition: background-color 0.3s ease;
+}
+
+.propuesta h3 {
+color: #ffffff;
+text-align: center;
+margin-bottom: 0.6em;
+z-index: 5;
+position: relative;
+}
+
+.propuesta p {
+position: relative;
+color: #ffffff;
+font-size: 0.8em;
+z-index: 5;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-size: 0.65em;
+    padding:  1vw 0vw  ;
+    font-size: 0.95em;
+    margin-top: 0vw;
+
+
+}
+footer p{
+    margin: 0.9vw;
+
+}
+
+footer a {
+    color: #426eff;
+    text-decoration: none;
+}
+
+.contenedor-pie-pagina {
+    
+    padding-bottom: 0vw;
+background-color: #343a40; 
+}
+
+.pie-de-pagina {
+    font-size: 0.9em;
+    padding: 1vw;
+   margin-bottom: 0;
+    color: white;
+    justify-content: space-around;
+display: flex;
+
+}
+.pie-de-pagina a{
+color: rgb(0, 153, 255);
+
+}
+.social-icons {
+display: flex; 
+}
+
+.social-icon {
+display: flex; 
+justify-content: center; 
+align-items: center; 
+border: 2px solid #007BFF; 
+border-radius: 50%; 
+width: 1.8em; 
+height: 1.8em; 
+color: #008cff; 
+font-size: 1.5em;
+margin: 0 0.5em; 
+transition: color 0.3s ease; 
+text-decoration: none;
+}
+
+.social-icon:hover {
+color: #ffffff; 
+border: 2px solid #ffffff; 
+}
+
+.social-icon i {
+
+margin: 0;
+vertical-align: middle; 
+}
+
+.logo{
+    width:10vw; 
+    height:10vw; 
+   
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carrusel,.carrusel-2 {
+flex:1;
+position: relative;
+width: 45%;
+height: 100% ;
+margin: auto;
+}
+
+.imagenes,.imagenes-2 {
+margin: auto;
+position: relative;
+width: 40vw;
+height: 45vw;
+overflow: hidden;
+}
+
+.imagenes img,.imagenes-2 img {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: contain;
+transition: opacity 0.5s;
+}
+
+.imagenes img.active,.imagenes-2 img.active {
+opacity: 1;
+display: block;
+}
+
+.imagenes img.no-active, .imagenes-2 img.no-active {
+opacity: 0;
+}
+
+.flechas {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 100%;
+}
+.flecha-izquierda,
+.flecha-derecha {
+
+position: absolute;
+border: none;
+border-radius: 50%; 
+ font-size: 1.8em;
+background-color: rgb(255, 255, 255);
+width: 1.7em; 
+height: 1.7em; 
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.082), 0 8px 10px rgba(0, 0, 0, 0.452);
+
+}
+
+.flecha-izquierda {
+left: 1vw;
+}
+
+.flecha-derecha {
+right: 1vw; 
+}
+
+.mission-vision{
+display: flex;
+background-image: url('https://www.infobae.com/new-resizer/R1U1sBnDwdrcDIcBkL7sIeTV358=/1200x675/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/O6KFF7JDSRG45AODK553U25INA.png'); 
+padding: 3em 0;
+width: 100%;
+height: 100%;
+text-align: center;
+ position: relative;
+background-size: cover; 
+background-position: center; 
+box-sizing: border-box; 
+background-attachment: fixed;
+
+}
+
+.mission-vision::before {
+content: ''; 
+position: absolute; 
+top: 0; 
+left: 0; 
+right: 0; 
+bottom: 0; 
+background-color: rgba(1, 5, 12, 0.493); 
+z-index: 1; 
+transition: background-color 0.3s ease;
+}
+
+
+.fla {
+ filter: drop-shadow(10px 10px 10px rgba(255, 253, 253, 0.5));
+position: absolute; 
+left: -1vw; 
+bottom:0em; 
+width: 30vw; 
+height: auto; 
+z-index: 5; 
+}
+.container h3{
+border-radius: 12px; 
+padding: 0.2em;
+margin: 0 auto;
+position: relative;
+color: #ffffff; 
+background-color:#0059be; 
+width: 25%;
+z-index: 1;
+font-size: 1.5em;
+}
+
+.container p {
+width: 75%; 
+display: flex;
+position: relative;
+font-size: 0.8em;
+margin: 20px auto; 
+background-color: #ffffff; 
+border: 1px solid #ccc;
+border-radius: 12px; 
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); 
+padding: 1.5em 1em; 
+z-index: 1; 
+line-height: 1.6;
+color: #333; 
+font-family: 'Georgia', serif; 
+position: relative;
+overflow: hidden; 
+}
+
+
+.container p::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(0, 123, 255, 0.05));
+z-index: -1; 
+border-radius: 12px; 
+transition: transform 0.3s ease; 
+}
+
+
+.container p:hover::before {
+transform: scale(1.08); 
+}
+
+.container p:hover {
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
+transform: translateY(-8px); 
+}
+
+.container p::after {
+content: ''; 
+position: absolute;
+bottom: 10px;
+right: 10px;
+font-size: 2em; 
+color: rgba(0, 123, 255, 0.932); 
+opacity: 0.5;
+pointer-events: none; 
+}
+
+.objetivos {
+
+background-color: #82bcdd;
+padding: 40px 0;
+}
+
+.content-objetivos {
+max-width: 100%;
+margin: 0 auto;
+text-align: center;
+}
+
+.content-objetivos h3 {
+font-size: 2em;
+margin-bottom: 20px;
+}
+
+.objetivo-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+.objetivo {
+width: 140px;
+height: 130px;
+border-radius: 50%;
+margin: 20px;
+padding: 2em;
+background-color: #ffffff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease;
+animation: heartbeat 2s infinite; 
+cursor: pointer; 
+text-align: center; 
+}
+
+@keyframes heartbeat {
+0% {
+    transform: scale(1);	
+}
+10% {
+    transform: scale(1.02);
+}
+20% {
+    transform: scale(1.03);
+}
+100% {
+    transform: scale(1);	
+}						
+}
+.objetivo i {
+background-color: #003aa5;
+padding: 10% 0 0 0;
+width: 55%;
+height: 50%;
+border-radius:50%;
+font-size: 3em;
+color: #ffffff;
+margin-bottom: 10px;
+}
+
+.objetivo p {
+
+margin: auto;
+width: 90%;
+font-size: 0.87em;
+}
+
+.objetivo:hover i {
+transform: translateY(-19px);
+}
+.noticias {
+padding: 20px;
+background-color: #f9f9f9;
+
+}
+
+.video-list {
+display: flex;
+flex-wrap: wrap; 
+justify-content: space-between; 
+list-style-type: none; 
+padding: 0; 
+}
+
+.video-list li {
+flex: 1 1 300px; 
+height: 55vh;
+margin: 2em; 
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+background: white; 
+padding: 1px; 
+border-radius: 5px; 
+}
+.video-iframe {
+width: 95%; 
+height: 40vh;
+border: none;
+}
+
+
+.body {
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #f4f4f4;
+    padding-top: 1em;
+}
+#Contacto h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 0.1em;
+    text-shadow: 0 5px 1px rgba(0, 102, 255, 0.575);
+    color: #333;
+    letter-spacing: 0.1em;
+}
+
+#Contacto h3{
+    font-size: 1.5em;
+    text-align: center;
+    display: block;
+    color: #666;
+}
+.redes-container ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+   
+}
+
+.redes-container ul li {
+    margin: 2vw;
+}
+
+
+
+.redes-container a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    font-size: 5em; /* Ajusta el tamaño del icono */
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    display: flex; /* Centra el contenido */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.redes-container .facebook {
+    color: #3b5998;
+}
+
+.redes-container .facebook:hover {
+    color: #fff;
+    background-color: #3b5998;
+    transform: scale(1.1);
+}
+
+.redes-container .twitter {
+    color: #1da1f2;
+}
+
+.redes-container .twitter:hover {
+    color: #fff;
+    background-color: #1da1f2;
+    transform: scale(1.1);
+}
+
+.redes-container .instagram {
+    color: #e4405f;
+}
+
+.redes-container .instagram:hover {
+    color: #fff;
+    background-color: #e4405f;
+    transform: scale(1.1);
+}
+
+.redes-container .linkedin {
+    color: #0077b5;
+}
+
+.redes-container .linkedin:hover {
+    color: #fff;
+    background-color: #0077b5;
+    transform: scale(1.1);
+}
+
+.redes-container ul li {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@media (max-width: 2080px) {
+
+.fla {
+
+position: absolute; 
+left: -2em;
+bottom:0; 
+width: auto; 
+height: 90%; 
+z-index: 5; 
+}
+
+.container p {
+
+width: 50%; 
+font-size: 1vw; 
+padding: 2em; 
+}
+nav  {
+
+font-size: 1.3vw;
+}
+
+@media (max-width: 1080px) {
+nav ul {
+    display: none; 
+    flex-direction: column; 
+    position: absolute;
+    top: 5em;
+    left: 0;
+    background-color: #ffffff; 
+    width: 100%; 
+    z-index: 10; 
+    a{
+        color:#ffffff;
+    }
+  
+}
+
+nav ul.show {
+    display: flex; 
+}
+
+nav .menu-icon {
+    display: block; 
+}
+
+nav ul li {
+    background-color: #004faa; 
+    padding: 0.5em;
+    font-size: 2em;
+    display: block; 
+
+}
+
+.hero h2 {
+    font-size: 3.7vw;
+}
+
+.hero p {
+    font-size: 3vw;
+}
+
+.btn {
+    font-size: 3vw;
+    padding: 0.3em 0.5em;
+}
+
+.propuesta {
+    padding: 5vw;
+    height: auto;
+    width: calc(45% - 1em); 
+
+}
+
+.propuesta h3 {
+   
+    font-size: 0.75em;
+}
+
+.propuesta p {
+   
+    font-size: 0.675em;
+}
+.flecha-izquierda,
+.flecha-derecha {
+
+font-size: 1.5em;
+
+
+}
+.carrusel,.carrusel-2{
+flex-basis: 100%;  
+width: 100%;
+height: auto;
+margin: 1em;
+}
+.imagenes,.imagenes-2{
+width: 70vw;
+height: 75vw;
+}
+footer,.pie-de-pagina{
+font-size: 0.65em;
+}
+.content-mision-vision p{
+font-size: 1.95vw;
+height: 25vw;
+}
+
+.fla {
+
+position: absolute; 
+left: -2em;
+bottom:0; 
+width: auto; 
+height: 55%; 
+z-index: 5; 
+}
+.container{
+margin: 3em;
+}
+.container p {
+
+    width: 75%; 
+    font-size: 0.85em; 
+    padding: 2em; 
+}
+
+.mission-vision {
+    display: block;
+    padding: 10px; 
+}
+
+}
+
+.redes-container a {
+    font-size: 6vw; /* Ajusta el tamaño del icono */
+ 
+}
+
+
+}
